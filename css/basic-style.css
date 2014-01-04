@@ -22,7 +22,7 @@ body{
 	font-weight:normal;
 }
 h1, h2, h3, h4, h5, h6{
-	color:#666;
+	color:#126CA2;
 	font-weight:normal;
 	font-family:'Oswald', Arial, Helvetica, sans-serif; 
 	line-height:1.5em;
@@ -193,10 +193,13 @@ footer ul{
 body{
 	background:#fff;
 }
-h1, h2, h3, h4, h5, h6{
+h1{
 	color:#4d4d4d; 
 }
 
+h2, h3, h4, h5, h6{
+	color:#126CA2; 
+}
 footer{ 
 	background:#ffffff;
 	border-top:2px solid #e2e2e2;
