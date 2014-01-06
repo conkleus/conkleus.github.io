@@ -106,17 +106,79 @@ padding:20px;
 	<section id="content" class="wide-content">
     	 <div class="grid_6">
 			<h2>CONTACT US NOW</h2>
-            <form>
-			Name: <input type="text"><br><br>
-			Email: <input type="text"><br><br>
-			Phone Number: <input type="text"><br><br>
-			How would you prefer to be contacted? (Check all that apply)<br>
-			<input type="checkbox" name="contact" value="Email"> Email&nbsp;&nbsp;
-<input type="checkbox" name="contact" value="Phone"> Phone<br><br>
-			Briefly describe your reason for contacting us:<br><br>
-			
+			<form name="htmlform" method="post" action="html_form_send.php">
+				<table>
+
+				<tr>
+					<td valign="top"">
+						<label for="name">Name: * &nbsp;</label>
+					</td>
+				
+					<td valign="top">
+						<input  type="text" name="name" maxlength="50" size="30"><br>
+					</td>
+				</tr>
+				
+				<tr>
+					<td valign="top">
+						<label for="email">Email: * </label>
+					</td>
+					<td valign="top">
+						<input  type="text" name="email" maxlength="80" size="30"><br>
+					</td>
+
+				</tr>
+				
+				<tr>
+					<td valign="top">
+						<label for="telephone">Phone: </label>
+					</td>
+					<td valign="top">
+						<input type="text" name="telephone" maxlength="30" size="30"><br><br>
+					</td>
+				</tr>
+				</table>
+				<table>
+				<tr>
+					<td valign="top">
+						<label for="contactpref">How would you prefer to be contacted? <br>(Check all that apply)</label>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<input type="checkbox" name="contactpref" value="email"> Email&nbsp;&nbsp;&nbsp;&nbsp;<input type="checkbox" name="contactpref" value="phone"> Phone<br><br>
+					</td>
+				<tr>
+					<td valign="top">
+						<label for="comments">Briefly describe your reason for contacting us: *</label>
+					</td>
+				</tr>
+				<tr>
+					<td valign="top">
+						<textarea  name="comments" maxlength="1000" cols="42" rows="8"></textarea><br><br>
+					</td>
+				</tr>
+				</table>
+				
+				<table>
+				
+				<tr>
+				<label for="disclaimer"><font size="2"><b>Disclaimer:</b> The use of this form for communication with the firm or any individual member of the firm does not establish an attorney-client relationship.</font><br><br></label>
+				</tr>
+				<tr>
+					* <input type="checkbox" name="disclaimer" value="disclaimer"> I have read and understand the disclaimer<br><br>
+				</tr>
+				
+				<tr>
+					<td colspan="2" style="text-align:left">
+						<input type="submit" value="Submit">
+					</td>
+				</tr>
+				</table>
 			</form>
-			<p><a href="#" class="buttonlink">CONTACT US</a></p>
+			
+			
+          
 		</div>
 		
 		<div class="grid_6">
