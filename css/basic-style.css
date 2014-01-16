@@ -18,7 +18,7 @@ body{
 	color:#666;
 	font-family:'Droid Sans', Arial, Helvetica, sans-serif; 
 	font-size:1em;
-	line-height:1.4em; 
+	line-height:1.5em; 
 	font-weight:normal;
 }
 h1, h2, h3, h4, h5, h6{
@@ -60,7 +60,7 @@ header{
 #page-header{
 	background:#ffffff;
 	border-top:2px solid #e2e2e2;
-	padding:20px 0;
+	padding:0px 0;
 }
 #hero h1{ 
 	line-height:1.2em;
@@ -182,7 +182,7 @@ img{ max-width:100%; height:auto;}
 footer{  
 	clear:both;
 	font-size:80%;
-	padding:20px 0;
+	padding:10px 0;
 }
 footer ul{
 	margin:0;
@@ -275,7 +275,7 @@ But I think that some more breathing space is good:)
 @media only screen and (min-width: 920px) {
 
 .wrapper{
-	max-width: 1200px; 
+	max-width: 1000px; 
 	margin: .75em auto;
 }
 
@@ -321,6 +321,7 @@ aside {
 /*** MAIN MENU - ESSENTIAL STYLES ***/
 .menu-toggle{display:none;}
 #menu-main-navigation{display:block;}
+#lmenu-main-navigation{display:none;}
 
 .srt-menu, .srt-menu * {
 	margin:			0;
@@ -389,7 +390,7 @@ ul.srt-menu li li li.sfHover ul {
 .srt-menu li a {
 	background:#fff;
 	margin:0; 
-	padding:10px 20px;
+	padding:0px 10px;
 	height:45px;
 }
 .srt-menu a, .srt-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
@@ -475,7 +476,7 @@ This is the average viewing window. So Desktops, Laptops, and
 in general anyone not viewing on a mobile device. Here's where
 you can add resource intensive styles.
 */
-@media only screen and (min-width: 1030px) {
+@media only screen and (min-width: 1000px) {
 
 } 
 
@@ -483,7 +484,7 @@ you can add resource intensive styles.
 LARGE VIEWING SIZE
 This is for the larger monitors and possibly full screen viewers.
 */
-@media only screen and (min-width: 1240px) {
+@media only screen and (min-width: 1000px) {
 
 } 
 
@@ -525,3 +526,164 @@ PRINT STYLESHEET
   p, h2, h3 { orphans: 3; widows: 3; }
   h2, h3 { page-break-after: avoid; }
 }
+
+
+/*LAWYER MENU*/
+.lmenu-toggle{
+	display:block;
+	padding:10px;
+	margin:0px 0 0;
+	background:#666;
+	color:#fff;
+	cursor:pointer;
+	text-transform:uppercase;
+	font-size:24px;
+	font-family:'Oswald', Arial, Helvetica, sans-serif; 
+}
+.lmenu-toggle.toggled-on{
+	background:#126CA2;
+}
+.lsrt-menu{
+	display:none;
+	text-transform:uppercase;
+	font-size:18px;
+	font-family:'Oswald', Arial, Helvetica, sans-serif; 
+	color:#666666;
+}	
+.lsrt-menu.toggled-on{
+	display:block;
+	position:relative;
+	z-index:10;
+}
+
+.lsrt-menu{
+	clear:both;
+	margin-bottom:10px;
+	color:#666666;
+	
+}
+.lsrt-menu li a {
+	background:#dadada;
+	display:block;
+	margin:1px 0; 
+	padding:10px;
+	text-decoration:none;
+}
+.lsrt-menu li a:hover{
+	background:#ffffff;
+	color:#126CA2;
+	text-transform:bold;
+}
+.lsrt-menu li li a {
+	background:#e8e8e8;
+	padding-left:40px;
+}
+.lsrt-menu li li li a {
+	background:#efefef;
+	padding-left:80px;
+}
+
+/*** MAIN MENU - ESSENTIAL STYLES ***/
+.lmenu-toggle{display:none;}
+#lmenu-main-navigation{display:block;}
+
+
+.lsrt-menu, .lsrt-menu * {
+	margin:			0;
+	padding:		0;
+	list-style:		none;
+}
+.lsrt-menu ul {
+	position:		absolute;
+	display:none;
+	width:			2em; /* left offset of submenus need to match (see below) */
+}
+.lsrt-menu ul li {
+	width:			100%;
+}
+.lsrt-menu li:hover {
+	visibility:		inherit; /* fixes IE7 'sticky bug' */
+}
+.lsrt-menu li {
+	float:			left;
+	position:		relative;
+	margin-left:1px;
+}
+.lsrt-menu li li {
+	margin-left:0px;
+}
+.lsrt-menu a {
+	display:		block;
+	position:		relative;
+}
+.lsrt-menu li:hover ul,
+.lsrt-menu li.sfHover ul {
+	display:block;
+	left:			0;
+	top:			45px; /* match top ul list item height */
+	z-index:		99;
+	-webkit-box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+    box-shadow:  2px 3px 2px 0px rgba(00, 00, 00, .3);
+}
+ul.lsrt-menu li:hover li ul,
+ul.lsrt-menu li.sfHover li ul {
+	top:			-999em;
+}
+ul.lsrt-menu li li:hover ul,
+ul.lsrt-menu li li.sfHover ul {
+	left:			2em; /* match ul width */
+	top:			0;
+}
+ul.lsrt-menu li li:hover li ul,
+ul.lsrt-menu li li.sfHover li ul {
+	top:			-999em;
+}
+ul.lsrt-menu li li li:hover ul,
+ul.lsrt-menu li li li.sfHover ul {
+	left:			2em; /* match ul width */
+	top:			0;
+}
+
+/*** DEMO1 SKIN ***/
+#ltopnav, .lsrt-menu {
+	float:left;
+	margin: 1.2em 0 0 0;
+}
+.lsrt-menu a {
+	text-decoration:none;
+}
+.lsrt-menu li a {
+	background:#fff;
+	margin:0; 
+	padding:0px 10px;
+	height:45px;
+}
+.lsrt-menu a, .lsrt-menu a:visited  { /* visited pseudo selector so IE6 applies text colour*/
+	color:	#4d4d4d;	
+}
+.lsrt-menu li li a {
+		border-top:		1px solid rgba(255,255,255,.2);
+		background:		#333; /*fallback for old IE*/
+		background:rgba(0,0,0,.6);
+		color:	#126CA2;
+		padding-left:0px;
+		height:auto;
+}
+.lsrt-menu li li a:visited{color:#fff;}
+.lsrt-menu li li li a,
+.lsrt-menu li.current * li a{
+	padding-left:0px;
+	background:#ffffff
+	color:#126CA2;
+}
+
+.lsrt-menu li:hover > a,
+.lsrt-menu li.current a{ 
+	color:#126CA2;
+	background:#fff;
+}
+.lsrt-menu li li:hover > a{
+	color:#126CA2;
+	background:#fff;
+}
+

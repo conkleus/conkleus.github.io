@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:3.0
+FN:Christina Olesten
+N:Olesten;Christina;;;
+EMAIL;TYPE=INTERNET;TYPE=WORK:christina@conkle.us
+TEL;TYPE=CELL:310 820-3700
+TEL;TYPE=CELL:310 493-3000
+ADR;TYPE=WORK:;;11835 W. Olympic Blvd. Ste. 1235;Los Angeles;CA;90064;
+ORG:Conkle & Olesten
+TITLE:Lawyer
+END:VCARD
