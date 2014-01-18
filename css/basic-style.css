@@ -17,11 +17,11 @@ BASE (MOBILE) SIZE
 body{
 	color:#666;
 	font-family:'Droid Sans', Arial, Helvetica, sans-serif; 
-	font-size:1em;
+	font-size:.95em;
 	line-height:1.5em; 
 	font-weight:normal;
 }
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3{
 	color:#126CA2;
 	font-weight:normal;
 	font-family:'Oswald', Arial, Helvetica, sans-serif; 
@@ -29,7 +29,14 @@ h1, h2, h3, h4, h5, h6{
 	margin:.20em 0;
 	padding:0;
 } 
-
+h4, h5, h6{
+	color:#126CA2;
+	font-weight:normal;
+	font-family:'Oswald', Arial, Helvetica, sans-serif; 
+	line-height:1.5em;
+	margin:.0em 0;
+	padding:0;
+}
 
 /* links */
 a {color:#126CA2; text-decoration:none;},
@@ -139,6 +146,15 @@ img{ max-width:100%; height:auto;}
 .srt-menu li li li a {
 	background:#efefef;
 	padding-left:80px;
+}
+
+/*SMALL LIST TEXT*/
+.smalltext{
+	color:#666;
+	font-family:'Droid Sans', Arial, Helvetica, sans-serif; 
+	font-size:.8em;
+	line-height:1.5em; 
+	font-weight:normal;
 }
 
 /*SECONDARY MENU*/
@@ -686,4 +702,28 @@ ul.lsrt-menu li li li.sfHover ul {
 	color:#126CA2;
 	background:#fff;
 }
+
+
+
+/*** LIST STYLES ***/
+#lists
+
+.lists ul {
+	list-style-type: square;
+	margin-left: -25px; 
+}
+
+.lists li {
+	color:#126CA2;
+	list-style-type: square;
+	margin-bottom: 5px;
+	margin-left: -20px; 
+}
+
+.lists li span {
+	color:#666666
+}
+
+
+
 
